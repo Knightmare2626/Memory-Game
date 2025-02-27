@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import diavolo from "./assets/diavolo.png";
 import gyro from "./assets/gyro.jpg";
