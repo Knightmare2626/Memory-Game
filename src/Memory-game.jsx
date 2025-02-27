@@ -64,10 +64,11 @@ export default function MemoryCard() {
   }
 
   function extractName(imagePath) {
-    const match = imagePath.match(/([\w-]+)\.\w+$/);
-    return match ? match[1] : "Unknown";
+    let fileName = imagePath.split("/").pop();
+    fileName = fileName.split(".")[0];
+    return fileName.split("-")[0]; 
   }
-
+  
   function Main() {
     baseState.sort( () => .5 - Math.random() );
     return (
