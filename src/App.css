@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  font-size: 1.2rem;
+  background-color: #737288;
+  color: white;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0.6rem;
+}
+
+p::first-letter {
+  text-transform: capitalize;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+img {
+  width: 200px;
+  height: 250px;
+  border: 1px solid #222222;
+  background-color: white;
+
+  filter: grayscale(30%);
+  transition: filter 0.3s ease;
+}
+
+
+img:hover {
+  filter: grayscale(0%);
+  border: 3px solid #222222;
+  border-color: #290b94; 
+  width: 198px;
+  height: 248px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1%;
+  margin-left: 14%;
+  margin-right: 14%;
+  gap: 20px;
+}
+
+.navbar {
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 30px;
+}
+
